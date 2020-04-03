@@ -5,6 +5,7 @@ import warnings
 import graphviz
 import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib import rcParams
 
 from scipy.optimize import curve_fit
 from scipy.optimize import fsolve

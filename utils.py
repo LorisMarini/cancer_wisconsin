@@ -1,4 +1,4 @@
-from libraries import *
+from dependencies import *
 
 def learn_tree(*, X_train, y_train, X_test, y_test, features, max_features=None, max_leaf_nodes=None):
     """

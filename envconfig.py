@@ -15,8 +15,5 @@ pd.set_option("display.max_columns", 200)
 pd.set_option("display.max_rows", 0)
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
 
-# Adjust matplotlib font
-font = {'family' : 'DejaVu Sans',
-        'weight' : 'normal',
-        'size'   : 14}
-matplotlib.rc('font', **font)
+# Configure matplotlib
+matplotlib.rc_file("matplotlibrc")
