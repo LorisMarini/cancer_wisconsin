@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="uniformity_cell_size <= 2.5\nentropy = 0.936\nsamples = 511\nvalue = [331, 180]\nclass = 0", fillcolor="#f3c6a5"] ;
+1 [label="clump_thickness <= 6.5\nentropy = 0.19\nsamples = 309\nvalue = [300, 9]\nclass = 0", fillcolor="#e6853f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="bare_nuclei <= 4.5\nentropy = 0.058\nsamples = 301\nvalue = [299, 2]\nclass = 0", fillcolor="#e5823a"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 294\nvalue = [294, 0]\nclass = 0", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="entropy = 0.863\nsamples = 7\nvalue = [5, 2]\nclass = 0", fillcolor="#efb388"] ;
+2 -> 4 ;
+5 [label="bare_nuclei <= 2.0\nentropy = 0.544\nsamples = 8\nvalue = [1, 7]\nclass = 1", fillcolor="#55abe9"] ;
+1 -> 5 ;
+6 [label="entropy = 1.0\nsamples = 2\nvalue = [1, 1]\nclass = 0", fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 6\nvalue = [0, 6]\nclass = 1", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="uniformity_cell_size <= 4.5\nentropy = 0.618\nsamples = 202\nvalue = [31, 171]\nclass = 1", fillcolor="#5dafea"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="bare_nuclei <= 6.0\nentropy = 0.982\nsamples = 69\nvalue = [29, 40]\nclass = 1", fillcolor="#c9e4f8"] ;
+8 -> 9 ;
+10 [label="entropy = 0.89\nsamples = 39\nvalue = [27, 12]\nclass = 0", fillcolor="#f1b991"] ;
+9 -> 10 ;
+11 [label="entropy = 0.353\nsamples = 30\nvalue = [2, 28]\nclass = 1", fillcolor="#47a4e7"] ;
+9 -> 11 ;
+12 [label="bland_chromatin <= 4.5\nentropy = 0.113\nsamples = 133\nvalue = [2, 131]\nclass = 1", fillcolor="#3c9ee5"] ;
+8 -> 12 ;
+13 [label="entropy = 0.345\nsamples = 31\nvalue = [2, 29]\nclass = 1", fillcolor="#47a4e7"] ;
+12 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 102\nvalue = [0, 102]\nclass = 1", fillcolor="#399de5"] ;
+12 -> 14 ;
+}

@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import warnings
 import graphviz
+import matplotlib
 import matplotlib.pyplot as plt
 
 from scipy.optimize import curve_fit

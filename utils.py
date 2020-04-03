@@ -1,17 +1,16 @@
 from libraries import *
 
-def learn_tree(*, X_train, y_train, X_test, y_test, features, max_features=None):
+def learn_tree(*, X_train, y_train, X_test, y_test, features, max_features=None, max_leaf_nodes=None):
     """
     Implements training and testing for a decision tree classifier
     """
-    if max_features < 1 or max_features>len(features):
-        raise ValueError("max_features expected to be between 2 and len(features)")
+    if max_features:
+        if max_features < 1 or max_features>len(features):
+            raise ValueError("max_features expected to be between 2 and len(features)")
 
     # Instantiate mdoel from its scikit learn class
     estimator = tree.DecisionTreeClassifier(criterion="gini",
-                                            max_features=max_features,
-                                            max_leaf_nodes=None,
-                                            min_samples_leaf=1,
+                                            max_leaf_nodes=max_leaf_nodes,
                                             random_state=0)
 
     # Induce the model

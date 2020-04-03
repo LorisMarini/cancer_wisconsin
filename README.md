@@ -38,3 +38,9 @@ Class = 4 (malignant tumor)
 | Class | 2,4 |
 
 ## Results: Decision Tree
+As expected learning improves when we increase the size of the dataset:
+![](images/learning-curve.png)
+
+One way to see the bias variance tradeoff is to plot the performance in training and testing for varying levels of model complexity. Since there are not many features here, we don't see much difference. 
+
+![](images/fitting-graph.png)
