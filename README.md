@@ -1,17 +1,17 @@
-![image.png](attachment:image.png)
+![](cancer_cell_image.png)
 
 ## Problem Statement
 Can we use linear classification to predict malignant cancer cells knowing the geometric properties of the cell nuclei?
 
 ## Data Source
-Wisconsin Breast Cancer Database (January 8, 1991), Dr. William H. Wolberg [archive](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)). Breast cells were collected from patients with a technique known as fine needle aspirate (FNA) and analysed under a microscope. A number of features were computed from their images and their state (benign, malignant) recorded in a target vector. See for example this [paper](file:///Users/lorismarini/Downloads/94-10.pdf).
+Wisconsin Breast Cancer Database (January 8, 1991), Dr. William H. Wolberg [archive](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)). Breast cells were collected from patients with a technique known as fine needle aspirate (FNA) and analysed under a microscope. A number of features were computed from their images and their state (benign, malignant) recorded in a target vector. See for example [Breast Cancer Diagnosis and Prognosis Via Linear Programming](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.45.8794&rep=rep1&type=pdf).
 
 ## Dataset description
 
 Missing attribute values: 16
 
    > There are 16 instances in Groups 1 to 6 that contain a single missing
-   (i.e., unavailable) attribute value, now denoted by "?".  
+   (i.e., unavailable) attribute value, now denoted by "?".
 
 Class distribution:
 
