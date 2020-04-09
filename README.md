@@ -41,6 +41,6 @@ Class = 4 (malignant tumor)
 As expected learning improves when we increase the size of the dataset:
 ![](images/learning-curve.png)
 
-One way to see the bias variance tradeoff is to plot the performance in training and testing for varying levels of model complexity. Since there are not many features here, we don't see much difference. 
+One way to see the bias variance tradeoff is to plot the performance in training and testing for varying levels of model complexity. We expect to see training score to increase, and testing score to decrease (overfitting). Here we see an inverse trend, which we attribute to noise. Since there are not many features here, we don't see much difference
 
 ![](images/fitting-graph.png)
